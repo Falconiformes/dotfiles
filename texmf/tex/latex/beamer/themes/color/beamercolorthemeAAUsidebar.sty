@@ -1,0 +1,49 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamercolorthemeAAUsidebar}[2014/09/13 The AAU Sidebar Beamer Theme]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theme options and definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%theme options
+\DeclareOptionBeamer{lightheaderbg}{\def\beamer@lightheaderbg{true}}
+\ProcessOptionsBeamer
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%beamer specific options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>%refers to the first four modes (beamer,handout,second and trans). That is, to all modes except the article mode
+{
+% a) uncomment the two lines below and comment out line 31, 31, and 42
+%  \definecolor{beamer@barcolor}{rgb}{0.55,0.79,0.94}% old light blue
+%  \definecolor{beamer@headercolor}{rgb}{0.00,0.41,0.66}% old dark blue
+% b) open the aau_logo_new.eps-file and/or the aau_logo_new_circle.eps-file in a text editor
+%  and change line 69 to
+%  0 105 168 rG
+% c) convert the eps-file to a pdf-file. This can be done by running
+%  epstopdf aau_logo_new.eps
+%%% Colors
+\definecolor{uablue}{RGB}{0,61,100}
+\colorlet{uablue25}{uablue!25}
+\colorlet{uablue10}{uablue!10}
+\colorlet{uablue5}{uablue!5}
+\definecolor{uared}{RGB}{126,0,47}
+\colorlet{uared25}{uared!25}
+\colorlet{uared10}{uared!10}
+\colorlet{uared5}{uared!5}
+\definecolor{uagreen}{RGB}{0,97,26}
+\colorlet{uagreen25}{uagreen!25}
+%%%% Beamer colors
+\setbeamercolor{structure}{fg=uablue}
+\setbeamercolor{normal text}{fg=black!85}
+\setbeamercolor{AAUsidebar}{bg=uablue,fg=uablue25}
+\setbeamercolor{block title alerted}{fg=uared,bg=white}
+\setbeamercolor{block body alerted}{bg=white}
+\setbeamercolor{block title example}{fg=uagreen,bg=white}
+\setbeamercolor{block body example}{bg=white}
+\setbeamercolor{alerted text}{fg=uared}
+  \ifx\beamer@lightheaderbg\undefined% use a light, white header background
+    \setbeamercolor{frametitle}{fg=red,bg=red}
+  \fi
+\setbeamercolor{frametitle}{fg=white,bg=uablue}
+}%end of beamer specific options
+
+\mode<all>

@@ -1,0 +1,35 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamercolorthemeAAUsimple}[2014/10/31 The AAU Simple Beamer Theme]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theme options and definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%beamer specific options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>%refers to the first four modes (beamer,handout,second and trans). That is, to all modes except the article mode
+{
+%%% Colors
+\definecolor{uablue}{RGB}{0,61,100}
+\colorlet{uablue25}{uablue!25}
+\colorlet{uablue10}{uablue!10}
+\colorlet{uablue5}{uablue!5}
+\definecolor{uared}{RGB}{126,0,47}
+\colorlet{uared25}{uared!25}
+\colorlet{uared10}{uared!10}
+\colorlet{uared5}{uared!5}
+\definecolor{uagreen}{RGB}{0,97,26}
+\colorlet{uagreen25}{uagreen!25}
+%%%% Beamer colors
+\setbeamercolor{structure}{fg=uablue}
+\setbeamercolor{normal text}{fg=black!85}
+\setbeamercolor{frametitle}{fg=white,bg=uablue}
+\setbeamercolor{AAUsimple}{bg=uablue,fg=uablue25}
+\setbeamercolor{block title alerted}{fg=uared,bg=white}
+\setbeamercolor{block body alerted}{bg=white}
+\setbeamercolor{block title example}{fg=uagreen,bg=white}
+\setbeamercolor{block body example}{bg=white}
+\setbeamercolor{alerted text}{fg=uared}
+}%end of beamer specific options
+
+\mode<all>

@@ -1,0 +1,5 @@
+pane	0	0	:nvim	1	:*	0	:/home/edon	1	nvim	:nvim /home/edon/.tmux.conf
+pane	0	0	:nvim	1	:*	1	:/home/edon	0	zsh	:
+pane	0	0	:nvim	1	:*	2	:/home/edon	0	zsh	:
+window	0	0	1	:*	c98a,147x38,0,0[147x19,0,0,0,147x18,0,20{73x18,0,20,3,73x18,74,20,4}]
+state	0	
